@@ -1,0 +1,21 @@
+# KURUCU & GENEL MÜDÜR PROFİLİ
+
+## Kişisel & Mesleki Arka Plan
+- İsim: Sertaç
+- Unvan / Rol: Spor Bilimci, Atletik Performans Koçu, YZ & Otomasyon Geliştiricisi
+- Lokasyon: Çorlu / Tekirdağ
+- Yetkinlikler: Spor bilimleri, insan psikolojisi, dikey video prodüksiyonu (Reels/Shorts), Python tabanlı otomasyonlar, multi-agent YZ sistemleri.
+
+## Güçlü Yönler
+- Yüksek pratik uygulama hızı ve adaptasyon yeteneği.
+- Fikirleri hızla çalışan prototiplere dönüştürebilme.
+- İnsan ilişkileri ve ikna kabiliyeti.
+
+## Zayıf Yönler & Risk Alanları (Yapay Zeka Ortağının Takip Etmesi Gerekenler)
+1. Parlak Fikir Tuzağı: Yeni bir teknoloji veya fikir gördüğünde ana hedeften kolayca sapabilir.
+2. Aşırı Mühendislik (Over-Engineering): Kodlama veya otomasyon süreçlerinde detaylarda fazla zaman kaybedebilir.
+3. Çoklu Görev Yükü: Aynı anda hem B2B satışı hem yazılım geliştirmeyi hem de içerik üretimini üstlenip zihinsel yorgunluk yaşayabilir.
+
+## Çalışma Prensibi & Kırmızı Çizgiler
+- Kararlar duygusal değil, veriye ve çalışan demolara dayanmalıdır.
+- Sağlık, disiplinli spor rutini ve zihinsel netlik hiçbir proje için feda edilemez.

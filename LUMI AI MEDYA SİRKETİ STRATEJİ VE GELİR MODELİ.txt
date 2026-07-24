@@ -1,0 +1,15 @@
+# YZ MEDYA ŞİRKETİ - STRATEJİ VE GELİR MODELİ
+
+## 🎯 Ana Vizyon
+Kendi kendini finanse eden (Self-sustaining), çift motorlu bir YZ Medya ve Teknoloji Şirketi kurmak. Büyük sanayi kuruluşları, fabrikalar ve kurumsal firmalardan ölçeklenebilir B2B işletmelere kadar uçtan uca dijital varlık (Modern Web Sitesi Tasarımı, YZ Destekli Dijital Altyapı, Kurumsal Sosyal Kimlik Yönetimi) ve 4K Sinematik YZ Medya Mimarisi sunan hibrit bir teknoloji ajansı olmak.
+
+## 🚀 FAZ 1: Sıcak Nakit Akışı (Active Revenue) - B2B YZ Medya Ajansı
+- Hedef Kitle & Alan: Çorlu, Tekirdağ ve Trakya Sanayi Bölgesi'ndeki fabrikalar, imalatçılar, sanayi kuruluşları, yüksek bütçeli kurumsal firmalar ile lüks yerel işletmeler (Diş Klinikleri, Medikal Estetik, PPF Oto Detailing, Özel Okullar, Lüks Restoranlar).
+- Hizmet Paketi 1 (Kurumsal Dijital Mimari): Fabrika ve büyük işletmeler için modern, yüksek hızlı, prestijli web sitesi tasarımı ve kurumsal sosyal kimlik yönetimi.
+- Hizmet Paketi 2 (Sinematik YZ Medya Prodüksiyonu): Fabrika/üretim tesisi tanıtımları, lüks işletmeler için 4K sinematik B-Roll ve sosyal medya algı yönetimi videoları.
+- Yöntem: "Demo-First" Stratejisi. Müşteriye hayal satmak yerine, Apify ile veriyi çekip Claude + Higgsfield + ElevenLabs ile 15 saniyelik hazır demo video veya web arayüz taslağı üretilerek kapısı çalınır.
+- İşletim Modeli (Hibrit): İşletmenin veya fabrikanın kendi çektiği basit ham görüntüler (A-Roll) + YZ Sinematik Görseller (B-Roll) + Profesyonel Dış Ses + Modern Web Arayüzleri.
+
+## 💰 FAZ 2: Pasif Gelir (Passive Revenue) - Faceless / Sinematik YZ Kanalları
+- Hedef: B2B ajansından elde edilen kâr ile finanse edilen, 100% otomasyona dayalı YouTube Shorts / TikTok / Instagram kanalları açmak (Hikaye anlatımı, Sinematik, Anime vb.).
+- Amaç: Reklam gelirleri, sponsorluklar ve dijital ürün satışları ile uzun vadeli pasif gelir akışı yaratmak.
