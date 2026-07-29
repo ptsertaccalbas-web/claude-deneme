@@ -1,0 +1,14 @@
+{
+  "name": "osint-rapor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "send": "node send.js",
+    "test": "node send.js --list"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

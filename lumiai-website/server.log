@@ -1,0 +1,33 @@
+▲ Next.js 16.2.11 (Turbopack)
+- Local:         http://localhost:3456
+- Network:       http://192.168.1.35:3456
+✓ Ready in 551ms
+⚠ Slow filesystem detected. The benchmark took 595ms. If C:\Users\asus\Desktop\claude-deneme\lumiai-website\.next/dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+
+ GET /saas-landing 200 in 447ms (next.js: 209ms, application-code: 238ms)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:71:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:71:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:71:54)
+[browser] Lenis: Target not found features (app/saas-landing/page.tsx:71:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:71:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:71:54)
+[browser] Lenis: Target not found features (app/saas-landing/page.tsx:71:54)
+✓ Compiled in 120ms
+ GET /saas-landing 200 in 188ms (next.js: 76ms, application-code: 112ms)
+ GET /saas-landing 200 in 77ms (next.js: 10ms, application-code: 67ms)
+ GET /saas-landing 200 in 28ms (next.js: 6ms, application-code: 22ms)
+[browser] Lenis: Target not found features (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found stats (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found stats (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found features (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found stats (app/saas-landing/page.tsx:93:54)
+[browser] Lenis: Target not found pricing (app/saas-landing/page.tsx:93:54)

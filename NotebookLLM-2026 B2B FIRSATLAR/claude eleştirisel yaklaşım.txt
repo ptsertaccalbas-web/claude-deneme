@@ -1,0 +1,37 @@
+## 1. Kör Noktalar ve Gözden Kaçan Riskler
+
+**Platform bağımlılığı en büyük kırılganlık.** Beş modelin dördü (Outreach, Design-to-Code, OSINT, MCP Gateway) üçüncü taraf API'lere ve platform ToS'larına dayanıyor:
+- LinkedIn otomasyonu ve scraping (Sales Navigator, agent-browser) hesap yasaklama riskiyle karşı karşıya; LinkedIn'in bot tespiti 2025-2026'da agresifleşti. Bir müşterinin lead-gen motoru bir günde durabilir.
+- Maildoso/soğuk e-posta modeli, Google/Microsoft'un giderek sıkılaşan gönderici itibarı (sender reputation) politikalarına bağımlı — domain ısıtma stratejileri artık daha kısa ömürlü.
+- Figma Dev Mode MCP ve "Design-to-Code" modeli, Figma'nın kendi native AI özelliklerini (Figma Make, Figma Sites) büyütmesiyle bizzat platform tarafından disintermediate edilme riski taşıyor — tedarikçin aynı zamanda gelecekteki rakibin.
+- OSINT modelinde Nuclei/theHarvester gibi araçların "aktif tarama" bileşenleri, hedef şirketin izni olmadan yapıldığında bazı yargı alanlarında bilgisayar suçları mevzuatına (yetkisiz erişim/tarama) temas edebilir — rapor bunu hiç ele almıyor.
+
+**Otomasyon oranları müşteri tarafını yok sayıyor.** %90-95 gibi rakamlar muhtemelen *üretim* tarafını (içerik/rapor oluşturma) ölçüyor, ama satış döngüsündeki insan onayı, itiraz yönetimi, entegrasyon desteği ve "son %10" hata ayıklaması genelde toplam efor bütçesinin çoğunu yer. IDP modelinde özellikle: OCR %95 doğru olsa bile, kalan %5 hatanın finansal veri bağlamında (fatura/vergi) düzeltilmesi manuel QA gerektirir — bu, "%80 brüt marj" varsayımını aşındırır.
+
+**Tekil kişiye bağımlı operasyon riski hiç modellenmemiş.** Beş model de esasen "bir kişi + orkestrasyon yığını" mimarisi; hastalık, tükenmişlik veya API anahtarı iptali gibi tek nokta arızaları (single point of failure) müşteri teslimatını durdurabilir. Kurumsal alıcılar (özellikle IDP ve MCP Gateway'de) tam da bu yüzden "kaç kişilik ekipsiniz" sorusunu sorar.
+
+## 2. Yıkıcı Fırsatlar ve Gizli Kaldıraçlar
+
+**Çapraz model 1 — "Sinyal → Kanıt → Kapanış" hunisi.** Outreach (Model 1) sinyalleri tespit ediyor, OSINT (Model 4) güvenlik açıklarını buluyor. Bunları birleştirip "işte rakibinizin şu zafiyeti, biz onu 48 saatte kapatabiliriz" temalı korku-tabanlı ama meşru bir teklif (güvenlik denetim raporu + hemen çözüm teklifi) oluşturmak, soğuk outreach'i sıcak bir tetikleyiciye dönüştürür — dönüşüm oranı çok daha yüksek olur ve raporda bu sinerji hiç kurulmamış.
+
+**Çapraz model 2 — IDP çıktısı MCP Gateway'in Truva atı olabilir.** IDP projesiyle şirketin ERP/finans verisine zaten erişim kazanılıyor (Model 3). Bu, "zaten sizin verinizi yapılandırdık, şimdi bunu LLM ajanlarınıza güvenle açalım" diyerek Model 5'e (en yüksek bilet, $50-150K) doğal bir upsell yolu açar. Rapor bunları ayrı SKU'lar gibi sunmuş, oysa IDP aslında MCP Gateway'in ücretli keşif/discovery fazı olabilir.
+
+**Gözden kaçan niş: "Uyumluluk-as-a-Service".** OSINT + IDP yeteneklerinin kesişimi, KVKK/GDPR uyumluluk denetimi ve sızıntı izleme (dark web monitoring) gibi, CISO bütçesinden değil hukuk/uyumluluk bütçesinden ödenen, çok daha yüksek fiyatlandırılabilen bir hizmete dönüşebilir — bu bütçe satış döngüsü daha yavaş ama churn'ü çok daha düşüktür.
+
+**Kullanılmayan varlık: "Demo-First" yaklaşımının kendisi ürünleştirilebilir.** Rapor sinematik demo üretimini (Higgsfield/video-director) sadece kapanış aracı olarak kullanıyor; oysa bu "otonom kişiselleştirilmiş video demo motoru" tek başına satılabilir bir SaaS katmanı — rakiplerin bunu yapmadığı bir farklılaşma noktası şu an sadece iç kullanım için harcanıyor.
+
+## 3. Yol Haritası Eleştirisi
+
+**Sıralama mantığı tersine dönebilir.** "Önce nakit, sonra MRR, sonra kurumsal" sıralaması sezgisel ama IDP ve MCP Gateway'in satış döngüsü 4-8 hafta — yani 90. günde "başlanacak" değil, **1. günde pipeline'a girmesi gereken** projeler bunlar. Kurumsal satışın kendine özgü uzun döngüsü nedeniyle, 90. günde başlarsan gerçek geliri 150-180. günde görürsün. Doğru sıra: yüksek biletli işlemleri paralel olarak *ilk günden* pipeline'a sokmak, nakit akışını Outreach/OSINT ile köprülemek — sıralı değil paralel bir portföy yaklaşımı.
+
+**Kaynak çakışması gizli.** Aynı kişi/küçük ekip hem Faz 1'in operasyonel yükünü (kampanya yönetimi, teslimat) hem Faz 3'ün satış öncesi teknik keşif görüşmelerini (MCP Gateway, CISO ile güvenlik mimarisi tartışmaları) aynı anda yürütemez. Raporda kapasite planlaması yok — "90 gün sonra kurumsala geçeriz" cümlesi, o ana kadar kimin faz 1-2'yi yürüttüğünü varsaymıyor.
+
+**Alternatif öneri:** Faz 1'de sadece OSINT'i (sıfır maliyet, 1 haftalık dönüşüm) tam hızda çalıştır ve gelen nakidin bir kısmını hemen MCP Gateway/IDP için *satış geliştirme* (business development, teknik keşif çağrıları) üzerine ayır — üretim değil, sadece pipeline doldurma. Design-to-Code'u ikinci sıraya değil, kapasite izin verdiğinde eklenecek "dolgu" ürün olarak konumlandır çünkü rekabeti en yoğun ve platform riskine en açık olan bu.
+
+## 4. B2B Satış Bariyerleri
+
+**"Bunu zaten iç ekibimiz Copilot/ChatGPT Enterprise ile yapabilir" itirazı.** 2026'da CTO'ların çoğu genel amaçlı LLM araçlarına zaten erişiyor; "neden dışarıdan butik ajans" sorusunun cevabı net olmalı. Konumlandırma değişimi: genel yetenek değil, *entegrasyon + sürdürülebilir işletim* satılmalı ("araç size değil, çalışan sistem satıyoruz").
+
+**"Veri güvenliği/vendor lock-in" itirazı — özellikle MCP Gateway ve IDP'de.** CISO'lar "read-only" güvencesini yeterli bulmaz; SOC 2, veri saklama politikası, üçüncü ülkeye veri aktarımı gibi somut sertifikasyon/uyumluluk kanıtı ister. Butik bir ajansın bunlara sahip olmaması en büyük "hayır" nedenidir. Konumlandırma: küçük ekip → büyük güvence anlatısı yerine, üçüncü taraf denetim/sertifikasyon ortaklığıyla desteklenen bir teklif gerekir.
+
+**"Tek kişilik/küçük ekip riski" itirazı (özellikle yüksek biletli projelerde).** $50-150K bir Enterprise MCP projesine imza atan bir CMO/CTO, arkasında kurumsal bir yapı görmek ister, freelancer hissi veren bir yapı değil. Konumlandırma: "biz X sayıda uzman ajan/insan hibrit ekibiz" anlatısı yerine, referans müşteri, vaka çalışması ve garanti/SLA maddeleriyle güven inşa edilmeli — teknik yetenek zaten yeterli görünüyor, güven eksik.

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Tipografi Hiyerarşisi — N-Pak</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F8FAFC;
+    color: #0F172A;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+  
+  .title { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #64748B; margin-bottom: 2rem; font-weight: 600; }
+  
+  .section { margin-bottom: 3rem; padding: 1.5rem; border: 1px solid rgba(0,0,0,0.06); border-radius: 1rem; background: white; }
+  .section-label { font-size: 0.75rem; color: #64748B; margin-bottom: 0.5rem; font-weight: 600; }
+  
+  .h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2.5rem, 3vw + 1rem, 3.75rem); line-height: 1.05; font-weight: 700; text-wrap: balance; }
+  .h1 span { background: #FEF3C7; padding: 0 0.25rem; }
+  
+  .h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.75rem, 2vw + 0.5rem, 2.5rem); line-height: 1.1; font-weight: 600; text-wrap: balance; margin-top: 1.5rem; }
+  
+  .h3 { font-family: 'Oswald', sans-serif; font-size: clamp(1.25rem, 1vw + 0.25rem, 1.5rem); line-height: 1.2; font-weight: 600; margin-top: 1rem; }
+  
+  .h4 { font-family: 'Inter', sans-serif; font-size: clamp(1.125rem, 0.5vw + 0.5rem, 1.25rem); line-height: 1.3; font-weight: 600; margin-top: 0.75rem; letter-spacing: 0.02em; }
+  
+  .body-lg { font-size: clamp(1.125rem, 0.5vw + 0.5rem, 1.25rem); line-height: 1.6; font-weight: 400; margin-top: 0.5rem; text-pretty; }
+  
+  .body { font-size: clamp(1rem, 0.5vw + 0.5rem, 1.125rem); line-height: 1.6; font-weight: 400; margin-top: 0.25rem; text-pretty; }
+  
+  .small { font-size: 0.875rem; line-height: 1.5; font-weight: 400; margin-top: 0.25rem; color: #64748B; }
+  
+  .caption { font-size: 0.75rem; line-height: 1.4; font-weight: 400; margin-top: 0.25rem; color: #94A3B8; letter-spacing: 0.02em; }
+  
+  .meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; font-size: 0.75rem; color: #94A3B8; }
+  .meta span { background: #F1F5F9; padding: 0.125rem 0.5rem; border-radius: 0.25rem; }
+  
+  .allcaps { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: #D97706; }
+  
+  .divider { height: 1px; background: rgba(0,0,0,0.06); margin: 0.75rem 0; }
+  
+  .badge { display: inline-block; font-size: 0.625rem; letter-spacing: 0.05em; text-transform: uppercase; background: #D97706; color: white; padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">Tipografi Hiyerarşisi — Endüstriyel / İmalat</div>
+
+  <!-- H1 -->
+  <div class="section">
+    <div class="section-label"><span class="badge">H1 — Hero</span> <span style="color:#94A3B8;margin-left:0.5rem;">Oswald 700 · clamp(2.5rem, 3vw+1rem, 3.75rem) · lh 1.05 · tracking -0.02em</span></div>
+    <div class="h1">ENDÜSTRİYEL BANT <br><span>VE PAKETLEME</span></div>
+  </div>
+
+  <!-- H2 -->
+  <div class="section">
+    <div class="section-label"><span class="badge">H2 — Section</span> <span style="color:#94A3B8;margin-left:0.5rem;">Oswald 600 · clamp(1.75rem, 2vw+0.5rem, 2.5rem) · lh 1.1 · tracking -0.01em</span></div>
+    <div class="h2">ENDÜSTRİYEL ÇÖZÜMLER</div>
+    <div class="body" style="margin-top:0.75rem;">3M distribütörlüğü ve kendi üretimimizle geniş ürün yelpazesi.</div>
+  </div>
+
+  <!-- H3 -->
+  <div class="section">
+    <div class="section-label"><span class="badge">H3 — Kart</span> <span style="color:#94A3B8;margin-left:0.5rem;">Oswald 600 · clamp(1.25rem, 1vw+0.25rem, 1.5rem) · lh 1.2</span></div>
+    <div class="h3">Corex Dunnage Kasa</div>
+    <div class="body" style="margin-top:0.5rem;">Oluklu polipropilen levhalardan, ihtiyaca özel projelendirilmiş koruyucu kasalar.</div>
+  </div>
+
+  <!-- H4 -->
+  <div class="section">
+    <div class="section-label"><span class="badge">H4 — Alt başlık</span> <span style="color:#94A3B8;margin-left:0.5rem;">Inter 600 · clamp(1.125rem, 0.5vw+0.5rem, 1.25rem) · lh 1.3</span></div>
+    <div class="h4">Teknik Özellikler</div>
+    <div class="body" style="margin-top:0.5rem;">Yüksek mukavemetli polipropilen malzeme, özel üretim toleransları.</div>
+  </div>
+
+  <!-- ALL CAPS Label -->
+  <div class="section">
+    <div class="section-label"><span class="badge tracking">ALL CAPS Label</span> <span style="color:#94A3B8;margin-left:0.5rem;">Oswald 600 · 0.75rem · tracking +0.06em · accent renk</span></div>
+    <div class="allcaps" style="margin-top:0.25rem;">Ürünler</div>
+    <div class="allcaps" style="margin-top:0.5rem; color:#94A3B8;">Sektörler · Markalar · Kurumsal</div>
+  </div>
+
+  <!-- Body Large -->
+  <div class="section">
+    <div class="section-label"><span class="badge">Body Large</span> <span style="color:#94A3B8;margin-left:0.5rem;">Inter 400 · clamp(1.125rem, 0.5vw+0.5rem, 1.25rem) · lh 1.6</span></div>
+    <div class="body-lg">N-PAK Ambalaj & Sarfilm Endüstriyel Bantlar, 2013 yılında Çorlu'da kuruldu. 10 yılı aşkın süredir koruyucu ürünler ve teknik destek ile birçok sektöre hizmet vermektedir.</div>
+  </div>
+
+  <!-- Body -->
+  <div class="section">
+    <div class="section-label"><span class="badge">Body — Normal</span> <span style="color:#94A3B8;margin-left:0.5rem;">Inter 400 · clamp(1rem, 0.5vw+0.5rem, 1.125rem) · lh 1.6</span></div>
+    <div class="body">3M Bant, Yapıştırıcılar, Elektrik & Elektronik ve Bina Bakım ürün gruplarında Türkiye distribütörü olarak 10 yılı aşkın süredir hizmet veriyoruz. Savunma sanayiinden otomotive, beyaz eşyadan elektroniğe birçok sektöre koruyucu paketleme çözümleri sunuyoruz.</div>
+  </div>
+
+  <!-- Small -->
+  <div class="section">
+    <div class="section-label"><span class="badge">Small</span> <span style="color:#94A3B8;margin-left:0.5rem;">Inter 400 · 0.875rem · lh 1.5 · muted renk</span></div>
+    <div class="small">© 2026 N-PAK Ambalaj & Sarfilm Endüstriyel Bantlar · Tüm hakları saklıdır.</div>
+  </div>
+
+  <!-- Caption -->
+  <div class="section">
+    <div class="section-label"><span class="badge">Caption / Meta</span> <span style="color:#94A3B8;margin-left:0.5rem;">Inter 400 · 0.75rem · lh 1.4 · border renk</span></div>
+    <div class="caption">Son güncelleme: 27 Temmuz 2026 · 3 dakikada okunur</div>
+  </div>
+
+  <!-- Visual comparison -->
+  <div class="section" style="margin-top: 3rem;">
+    <div class="section-label"><span class="badge">Görsel Karşılaştırma — Doğru Hiyerarşi</span></div>
+    <div style="margin-top:1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+      <div style="font-family:'Oswald',sans-serif; font-size:3.75rem; font-weight:700; line-height:1.05;">H1 · 60px</div>
+      <div style="font-family:'Oswald',sans-serif; font-size:2.5rem; font-weight:600; line-height:1.1;">H2 · 40px</div>
+      <div style="font-family:'Oswald',sans-serif; font-size:1.5rem; font-weight:600; line-height:1.2;">H3 · 24px</div>
+      <div style="font-family:'Inter',sans-serif; font-size:1.25rem; font-weight:600; line-height:1.3;">H4 · 20px</div>
+      <div style="font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; line-height:1.6;">Body · 16px — 60-75 karakter satır uzunluğu. Bu örnek metin, ideal okunabilirlik için yeterli uzunlukta bir satırı temsil etmektedir. Göz yormaz, akıcı okunur.</div>
+      <div style="font-family:'Inter',sans-serif; font-size:0.875rem; font-weight:400; line-height:1.5; color:#64748B;">Small · 14px — Footer, ikincil bilgiler</div>
+      <div style="font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:400; line-height:1.4; color:#94A3B8;">Caption · 12px — Meta, etiket, tarih</div>
+    </div>
+  </div>
+
+  <!-- Wrong hierarchy -->
+  <div class="section" style="margin-top: 3rem; border-color: #FCA5A5; background: #FEF2F2;">
+    <div class="section-label" style="color: #DC2626;">❌ YANLIŞ Hiyerarşi (Önceki N-Pak — farklar çok küçük)</div>
+    <div style="margin-top:1rem; display: flex; flex-direction: column; gap: 0.25rem; opacity: 0.6;">
+      <div style="font-family:'Oswald',sans-serif; font-size:1.875rem; font-weight:600;">H1 · 30px (çok küçük)</div>
+      <div style="font-family:'Oswald',sans-serif; font-size:1.5rem; font-weight:600;">H2 · 24px (H1'den sadece 6px fark)</div>
+      <div style="font-family:'Oswald',sans-serif; font-size:1.125rem; font-weight:600;">H3 · 18px (neredeyse body ile aynı)</div>
+      <div style="font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; line-height:1.6;">Body · 16px</div>
+    </div>
+    <div style="margin-top:0.75rem; font-size:0.875rem; color: #DC2626;">
+      Sorun: H1=30px, H2=24px — sadece 6px fark. Kullanıcı gözü "bu önemli" diyemez. Modular scale kullanılmamış.
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["ANCHORED_SUMMARY.md", "WEBSITE-TALIMATLARI.md", "SITE-OTOMASYON-KURALLARI.md", "WEBSITE-TASARIM-REHBERI.md"],
+  "plugin": ["@dietrichgebert/ponytail"],
+  "mcpServers": {
+    "21st": {
+      "type": "http",
+      "url": "https://21st.dev/api/mcp",
+      "headers": {
+        "x-api-key": "21st_sk_2c35cd55d6acd9288e1201ac3f8d51dc2f45188c96913b51a281254dcc9d121d"
+      }
+    }
+  }
+}

@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(Get-Command *)"
+      "PowerShell(Get-Command *)",
+      "Read(//c/Users/asus/.local/share/opencode/**)",
+      "Read(//c/Users/asus/.config/opencode/**)",
+      "Read(//c/Users/asus/AppData/Roaming/**)",
+      "Read(//c/Users/asus/AppData/Local/**)"
     ]
   }
 }

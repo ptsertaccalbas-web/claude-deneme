@@ -1,1 +1,3 @@
 # ALINAN KARARLAR VE SÜREÇ TAKİBİ
+
+[25.07.2026] - KALICI BELLEK MEKANİZMASI KURULDU - ANCHORED_SUMMARY.md oluşturuldu, opencode.json instructions ile her yeni sohbette otomatik yüklenir. Yeni sohbet açınca "Devam ediyoruz" yazman yeterli.

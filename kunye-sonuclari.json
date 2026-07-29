@@ -1,0 +1,361 @@
+{
+  "http://www.isikmatbaa.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [],
+    "pages": []
+  },
+  "http://olusummatbaa.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2022"
+    ],
+    "pages": [
+      "/"
+    ]
+  },
+  "http://mobamatbaa.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2012",
+      "2021"
+    ],
+    "pages": [
+      "/"
+    ]
+  },
+  "http://www.korozo.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "1973",
+      "34522",
+      "2026"
+    ],
+    "pages": [
+      "/"
+    ]
+  },
+  "http://www.eforflexo.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2026"
+    ],
+    "pages": [
+      "/"
+    ]
+  },
+  "https://www.istanbuloluklum.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [],
+    "pages": []
+  },
+  "http://www.guvenayambalaj.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2010"
+    ],
+    "pages": [
+      "/iletisim",
+      "/hakkimizda",
+      "/",
+      "/tr/iletisim",
+      "/tr/hakkimizda"
+    ]
+  },
+  "https://ihsasambalaj.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [],
+    "pages": []
+  },
+  "http://akemirambalaj.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "0532",
+      "2024"
+    ],
+    "pages": [
+      "/"
+    ]
+  },
+  "http://www.yilmazplastikambalaj.com": {
+    "mersis": [],
+    "vergi": [
+      "9780516116"
+    ],
+    "sicil": [
+      "2024",
+      "1999",
+      "0212",
+      "97805161",
+      "2023",
+      "0505",
+      "34480",
+      "0406",
+      "9001"
+    ],
+    "pages": [
+      "/about",
+      "/contact",
+      "/"
+    ]
+  },
+  "https://www.divanambalaj.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [],
+    "pages": []
+  },
+  "http://www.sarcina.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [],
+    "pages": []
+  },
+  "https://www.demircanambalaj.com": {
+    "mersis": [],
+    "vergi": [
+      "9053347022"
+    ],
+    "sicil": [
+      "0533",
+      "0212",
+      "90533470",
+      "2224"
+    ],
+    "pages": [
+      "/"
+    ]
+  },
+  "https://acarambalaj.com.tr": {
+    "mersis": [],
+    "vergi": [
+      "0011178049",
+      "2400134000",
+      "5400064000",
+      "0062176480"
+    ],
+    "sicil": [
+      "0544",
+      "64800002",
+      "24001340",
+      "00006217",
+      "80499997",
+      "0532",
+      "1995",
+      "2026",
+      "54000640",
+      "00001117",
+      "1996",
+      "0212",
+      "2014"
+    ],
+    "pages": [
+      "/iletisim",
+      "/",
+      "/tr/iletisim"
+    ]
+  },
+  "https://www.diyaroglupaketleme.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "1985",
+      "1975",
+      "2200",
+      "2010"
+    ],
+    "pages": [
+      "/hakkimizda"
+    ]
+  },
+  "https://www.ecopack.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "22000",
+      "2011",
+      "2026",
+      "9001"
+    ],
+    "pages": [
+      "/hakkimizda",
+      "/",
+      "/tr/hakkimizda"
+    ]
+  },
+  "http://www.erdeambalaj.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2022",
+      "07951",
+      "2026",
+      "221153",
+      "0212",
+      "34490"
+    ],
+    "pages": [
+      "/iletisim",
+      "/hakkimizda",
+      "/about",
+      "/contact",
+      "/",
+      "/tr/iletisim",
+      "/tr/hakkimizda"
+    ]
+  },
+  "https://www.ozdenambalaj.com": {
+    "mersis": [],
+    "vergi": [
+      "9053067760"
+    ],
+    "sicil": [
+      "9010",
+      "90530677",
+      "9009",
+      "6034",
+      "6020",
+      "1064",
+      "4007",
+      "3061",
+      "1069",
+      "1070",
+      "6072",
+      "9012",
+      "7018",
+      "1068",
+      "6036",
+      "9011",
+      "9008",
+      "1067",
+      "1060",
+      "3062",
+      "2021",
+      "5020",
+      "1061"
+    ],
+    "pages": [
+      "/iletisim",
+      "/hakkimizda",
+      "/",
+      "/tr/iletisim",
+      "/tr/hakkimizda"
+    ]
+  },
+  "http://www.imsasambalaj.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2019",
+      "1990",
+      "0533",
+      "0541",
+      "0212",
+      "4500"
+    ],
+    "pages": [
+      "/iletisim",
+      "/hakkimizda",
+      "/"
+    ]
+  },
+  "https://ambalajfabrikasi.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2024",
+      "34490"
+    ],
+    "pages": [
+      "/iletisim",
+      "/hakkimizda",
+      "/"
+    ]
+  },
+  "http://www.elifambalaj.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2016",
+      "2026",
+      "2023"
+    ],
+    "pages": [
+      "/iletisim",
+      "/künye",
+      "/hakkimizda",
+      "/about",
+      "/contact",
+      "/",
+      "/tr/iletisim",
+      "/tr/hakkimizda"
+    ]
+  },
+  "https://www.haayambalaj.com": {
+    "mersis": [],
+    "vergi": [
+      "9054276754"
+    ],
+    "sicil": [
+      "5451",
+      "2026",
+      "90542767",
+      "34490"
+    ],
+    "pages": [
+      "/iletisim",
+      "/"
+    ]
+  },
+  "https://amoredesign.com.tr": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2019",
+      "2018",
+      "2017",
+      "6698",
+      "2021",
+      "2015"
+    ],
+    "pages": [
+      "/iletisim",
+      "/künye",
+      "/hakkimizda",
+      "/about",
+      "/contact",
+      "/",
+      "/tr/iletisim",
+      "/tr/hakkimizda"
+    ]
+  },
+  "https://modernambalaj.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [],
+    "pages": []
+  },
+  "https://ileribant.com": {
+    "mersis": [],
+    "vergi": [],
+    "sicil": [
+      "2022",
+      "9134",
+      "9130",
+      "2002",
+      "34490"
+    ],
+    "pages": [
+      "/",
+      "/tr/iletisim"
+    ]
+  }
+}

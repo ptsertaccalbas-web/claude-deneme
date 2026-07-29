@@ -1,0 +1,11 @@
+Source,URL,Type,Priority,Notes
+Wayback Machine,https://web.archive.org/web/{year}{month}{day}{hour}{min}{sec}/{url},archive,1,En son snapshot otomatik bulunur
+Web Archive API,https://archive.org/wayback/available?url={url},api,1,JSON döner; closest snapshot bulunur
+Google Cache,https://webcache.googleusercontent.com/search?q=cache:{url},cache,2,robots.txt engelli sitelerde çalışmaz
+Corlu TSO,https://rehber.corlutso.org.tr,rehber,3,POST/GET ile sorgulanabilir
+Cerkezkoy TSO,https://www.cerkezkoytso.org.tr/firmarehberi.html,rehber,3,iso-8859-9 encoding
+ITO,https://guncelle.ito.org.tr,rehber,4,Captcha/WAF var; manuel gerekebilir
+Google Maps,https://www.google.com/maps/search/{firma},maps,5,İletişim bilgileri ve yorumlar
+LinkedIn Search,https://www.linkedin.com/search/results/companies/?keywords={firma},social,5,Şirket sayfaları
+Sari Sayfalar,https://www.sarisayfalar.com,rehber,5,Genel firma rehberi
+Türkiye Firma Rehberi,https://www.turkiye-firma-rehberi.com,rehber,5,Genel firma rehberi

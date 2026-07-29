@@ -1,0 +1,47 @@
+📄 Eklenen Yetenekler (Skills)
+Yetenek Adı-Görevi / Ne İş Yapar?
+🎬 video-director: Sinematik Reels/Shorts videoları için detaylı görsel ve ASMR ses prompt matrisleri oluşturur.
+📊 sales-analyst : B2B satış süreçleri, teklif stratejileri ve gelir modelleri analizi yapar.
+🎨 frontend-master : Tasarım sistemini yönetir, UI/UX kalite denetimi yapar, 5 yetenekli tasarım ekibini koordine eder.
+🔍 systematic-debugging : Kod hatalarını yüzeysel değil; 4 aşamalı kök neden analiziyle disiplinli şekilde çözer.
+🌐 agent-browser : Web sitelerinde tarayıcı otomasyonu ve veri toplama kurguları hazırlar.
+🤖 browser-use : Karmaşık web navigasyonu ve otomasyon senaryolarını yönetir.
+🧠 brainstorming : Doğrudan koda girmeden önce fikri olgunlaştırır, 2-3 mimari alternatif sunar ve tasarım dökümanı çıkarır.
+🛠️ skill-creator : Sıfırdan yeni Claude yetenekleri tasarlar ve bunları standart formata getirir.
+🎯 animation-master : GSAP + Lenis ile scroll animasyonları, SplitText tipografi animasyonu, timeline sequencing ve mikro-interaction katmanı.
+🖌️ design-craftsman : "İnsan eli değmiş" hissi için noise/grain doku, custom cursor, magnetic buton, özgün renk paleti ve asimetrik layout.
+🔤 type-artist : Tipografi seçimi, font pairing, variable font aks animasyonu, GSAP SplitText ve okunabilirlik denetimi.
+🌌 webgl-artist : React Three Fiber + Drei ile 3D WebGL katmanı, post-processing efektleri (Bloom/Noise/Vignette), DOM+3D scroll senkronizasyonu.
+🎯 icon-designer : Lucide ikon sistemi (1600+ ikon, React), custom SVG ikon tasarımı, ikon tutarlılığı ve boyut standardizasyonu.
+⚡ web-design-master : Kusursuz, insan eli değmiş gibi görünen, AI ürünü olduğu belli olmayan web siteleri tasarlar. Next.js 16 + Tailwind v4 + Motion + GSAP + Lenis ile en az hata ve en kaliteli çıktıyı üretir.
+🪶 ponytail : AI ajanın en tembel senior dev gibi düşünmesini sağlar (%54 daha az kod, %27 daha hızlı). YAGNI merdiveni ile over-engineering'i bitirir. 6 alt skill (audit, review, debt, gain, help).
+✏️ visual-editor : Lovable/v0 tarzı UI elemanlarına tıklayıp CSS düzeyinde görsel düzenleme. Tailwind token-aware, kredi harcamaz, re-prompt gerekmez.
+📐 design-to-code : Figma/screenshot/örnek web sitesi görselini analiz edip birebir aynı Next.js + Tailwind v4 kodu üretir. Renk, font, layout, component otomatik çıkarım.
+⚙️ runtime-agent : Bolt.new benzeri kod çalıştırma döngüsü. Kodu yaz → npm install → çalıştır → hata yakala → LLM ile düzelt → tekrar dene. Maks 3 retry.
+🎪 agent-orchestrator : Emergent/Replit tarzı paralel ajan koordinasyonu. Karmaşık işleri task graph'e böler, bağımlılıkları çözer, çakışmaları merge eder.
+🔄 git-automation : v0/Emergent tarzı otomatik Git workflow'u. Her değişiklik için branch aç, auto-commit, PR oluştur, test et, merge et. Rollback her zaman mümkün.
+🗄️ supabase-agent : Lovable tarzı Supabase entegrasyonu. PostgreSQL schema + RLS politikaları + Auth + Storage + Edge Functions'ları prompt'tan otomatik kurar.
+🏷️ design-system : Canva/v0 tarzı marka token havuzu. Renk/font/spacing/component token'larını JSON+CSS formatında yönetir, projeler arası taşır.
+🖼️ design-canvas : Replit Agent 4 tarzı sonsuz WebGL tuval. Frame'ler, drag-drop, property panel, zoom/pan ve canlı preview ile görsel tasarım arayüzü.
+🔌 mcp-connector : MCP (Model Context Protocol) sunucularını yönetir. Supabase, GitHub, Figma, Stripe, Notion gibi harici servisleri AI agent'a bağlar.
+📡 competitor-watcher : Haftada 2 kez agent-browser ile rakipleri (Emergent, Lovable, Bolt, v0, Replit, Canva) + keşif kaynaklarını (Product Hunt, GitHub Trending) tarar, değişiklik/yeni araç/skill önerisi raporlar.
+
+🔧 agent-browser-debug : agent-browser WAF/captcha/SSL yüzünden bloklanınca hatayı teşhis eder, header/fingerprint/UA ayarlarını otomatik düzenleyip yeniden dener. 3 denemede de açılmazsa diğer kanallara yönlendirir.
+🔌 http-alt-channel : Tarayıcı bloklanınca veya gerekmediğinde doğrudan HTTP (Invoke-WebRequest) ile veri çeker. Özellikle TSO rehberleri, API'ler ve statik siteler için. ISO-8859-9 karakter seti sorununu yönetir.
+🔄 fallback-strategy : Agent-browser ve HTTP alternatifi de başarısız olunca devreye girer. Web Archive, Google Cache, alternatif rehber portalları ve sosyal medyayı tarar. Hiçbir şey bulamazsa manuel talimat üretir.
+🛡️ opsec : Operasyonel güvenlik katmanı. Tüm HTTP/tarama/OSINT operasyonlarında proxy yönlendirme, rate limiting, User-Agent rotasyonu, IP rotasyonu ve fingerprint koruması sağlar. Her lead için izole session kullanır, IP sızdırma testi yapar, WAF bloklarını tespit edip yedek proxy'ye geçer. Kullanılmadan hiçbir dış operasyon başlatılmaz.
+
+📦 Scrapling : 70.000 GitHub yıldızlı Python kütüphanesi. Cloudflare Turnstile dahil anti-bot korumalı siteleri aşar. CLI, MCP server ve interaktif shell ile gelir. (Kurulu: v0.4.11)
+⚡ ketch : Go ile yazılmış tek binary CLI. Web search (6 farklı backend), scrape, crawl ve code search yapar. MCP server var. Hızlı sorgulama ve bilgi toplama için. (Kurulu: v0.13.0)
+🧠 agentfetch : Tavily-style deep research agent. Soruyu alt başlıklara böler, çoklu arama motorunda tarar, topladığı veriyi LLM ile sentezleyip yapılandırılmış rapor üretir. Cloudflare bypass dahildir. (Kurulu: v0.2.0)
+📄 Xberg : Rust tabanlı belge işleme CLI/Python kütüphanesi. 97 format (PDF, Office, görsel, HTML, e-posta, arşiv) çıktı alır. OCR (Tesseract/PaddleOCR), Whisper transkripsiyon, embedding, chunking, MCP server. (Kurulu: v4.10.2)
+💼 linkedin-cli : LinkedIn otomasyon CLI (npm). Profil getir/sorgula, mesaj gönder, bağlantı yönet, arama yap. Linked API altyapısı ile cloud browser üzerinden çalışır, AI agent dostu JSON çıktı. (Kurulu: v1.2.7)
+🔍 Scout : Sosyal medya lead generation CLI (Python). Instagram, TikTok, LinkedIn, GitHub, YouTube, Twitch, Pinterest, Linktree'den profil/iletişim bilgisi çeker. SMTP e-posta doğrulama, lead skorlama (0-100), CSV export. (Kurulu: v1.3.1)
+📇 OCRmyPDF : Taranmış PDF'lere OCR katmanı ekleyen Python CLI. PDF/A uyumlu çıktı, sıkıştırma, dil otomatik algılama. Tesseract motoru ile çalışır. (Kurulu: v17.8.1)
+👁️ pdfvision : AI ajanlar için PDF görsel okuma CLI (npm/npx). Native text kalite sinyali, layout analizi, render, OCR. `npx pdfvision document.pdf` ile çalışır. (Kurulu: v0.15.0)
+🔎 Sherlock : Kullanıcı adı OSINT aracı. 400+ sosyal medya/platformda username varlığını tarar. CLI ve Python kütüphanesi. (Kurulu: v0.16.0, pip)
+📧 Holehe : E-posta hesap kontrolü. 120+ platformda e-posta adresinin kayıtlı olup olmadığını sorgular (işe yaramaz, doğrudan login dener). GDPR/veri sızıntısı tespiti için. (Kurulu: v1.61, pip)
+🌐 theHarvester : E-posta, subdomain, IP, virtual host OSINT toplayıcı. Google, Bing, Shodan, Censys, DNS brute-force, PGP sunucuları, LinkedIn vb. kaynaklardan hedef domain hakkında bilgi toplar. (Kurulu: v4.11.1, pip)
+🛡️ Nuclei : Hızlı zafiyet tarayıcı (Go). 8000+ CVE ve misconfig template ile hedef sistemlerde güvenlik açığı taraması yapar. Template-based çalışır, sürekli güncellenir. (Kurulu: v3.11.0, Windows binary)
+🔐 sslyze : SSL/TLS yapılandırma denetleyici (Python). Hedef domain'in SSL sertifikasını, şifreleme protokollerini, zafiyetlerini (Heartbleed, ROBOT, vb.) analiz eder. testssl.sh Windows alternatifi. (Kurulu: v6.3.1, pip)
+🌍 Domainlooker : Domain WHOIS ve DNS sorgulama CLI (Node.js). Domain kayıt bilgisi, nameserver, MX kaydı, SSL sertifika sorgulama, port taraması yapar. (Kurulu: v0.3.0, npm)
