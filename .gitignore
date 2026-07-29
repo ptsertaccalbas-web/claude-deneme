@@ -1,2 +1,4 @@
 claude_desktop_config.json
 opencode-deepsek/
+.env*
+!.env.secrets
