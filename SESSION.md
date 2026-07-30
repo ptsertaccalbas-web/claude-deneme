@@ -1,4 +1,22 @@
-# SESSION.md — Aktif Oturum Durumu (31 Temmuz 2026)
+# SESSION.md — Aktif Oturum Durumu (31 Temmuz 2026 — OTURUM KAPANDI)
+
+## 📌 OTURUM KAPANIŞ ÖZETİ (bir sonraki oturum buradan başlasın)
+
+Bu oturumda sırayla: (1) soru sorma kuralı 5 kez düzeltildi ve nihai hale geldi,
+(2) müşteri siteleri özgünlük sorunu bulundu ve düzeltildi, (3) tüm iş akışı
+sistemi audit edildi (11 sorun), (4) model/terminal tavsiyesi yapıldı, (5)
+OpenCode'da `git filter-repo` felaketi yaşandı ve kurtarıldı (detay yukarıda),
+(6) kurtarılan her şey commit'lenip **GitHub'a push edildi** (`e523e12`).
+
+**Repo şu an sağlıklı ve GitHub ile senkron.** Çekirdek sistem (lumiai-website,
+n-pak-ambalaj, corlu-ilgi-dis, git altyapısı) zarar görmedi. Sadece arabasarrafi
+ve fitness-coach'un kaynak kodu kayboldu (aşağıda "Kalan Adımlar"da 1. sırada).
+
+**Bir sonraki oturumda ilk yapılacak:** SESSION.md + AGENTS.md'yi oku, sonra
+"Kalan Adımlar" listesindeki 1. maddeden (arabasarrafi sıfırdan kurulum) başla —
+kullanıcı muhtemelen bunu isteyecek, elindeki gerçek telefon/adres/sosyal medya
+bilgilerini sorup teyit ederek ilerle (uydurma).
+
 
 ## 🚨 EN ÖNEMLİ NOT — 31 Temmuz 2026 git-filter-repo felaketi
 
