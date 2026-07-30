@@ -11,25 +11,30 @@ Doğrudan kod yazmaya geçmek yerine, fikirleri doğal bir diyalogla netleştiri
 
 ## Demir Kurallar
 
-* **Tasarım Onayı Olmadan Kod Yazılamaz:** Ne kadar küçük veya "basit" görünürse görünsün, tasarım sunulup kullanıcıdan onay alınmadan kodlama veya scaffolding yapılamaz.
-* **Tek Tek Soru Sorma:** Kullanıcıyı soru yağmuruna tutmayın. Tek seferde yalnızca 1 soru sorun (mümkünse çoktan seçmeli).
-* **Alternatif Sunma:** Tek bir çözüme çakılmayın. Her zaman avantaj/dezavantajlarıyla birlikte 2-3 farklı yaklaşım önerin.
+> **Not (AGENTS.md ile çakışma önleme — bkz. AGENTS.md "SORU SORMA KURALI"):**
+> Kullanıcı bir şey söylediğinde aşağıdaki onay/soru adımları (2, 4, 7) ATLANIR —
+> kendi kararınla tasarımı belirle, tek satır bilgilendirme yap, doğrudan kodla,
+> sonuna kadar tamamla, sonra rapor ver. Soru SADECE AGENTS.md'deki 2 durumda
+> sorulur (yıkıcı/geri dönüşü olmayan işlem, ya da gerçekten eksik/çelişkili bilgi).
+
+* **Tasarım kararını kendin ver, bilgilendir:** Ne kadar küçük veya "basit" görünürse görünsün, tasarımı sen belirle, tek satırla bildir, kodla — onay beklemeden.
+* **Soru sorma (yukarıdaki 2 istisna hariç):** Kullanıcıyı soru yağmuruna tutma. AGENTS.md'deki 2 durumdan biri geçerli değilse hiç soru sorma.
+* **Alternatif Sunma:** Tek bir çözüme çakılmayın. Avantaj/dezavantajlarıyla birlikte 2-3 farklı yaklaşımı bilgilendirme olarak (soru değil) sunun, kendi tercihini gerekçeyle belirt, devam et.
 
 ---
 
 ## Süreç Adımları (Adım Adım)
 
 1. **Proje Bağlamını İnceleyin:** Mevcut dosyaları, son commit'leri ve dökümanları okuyarak başlayın.
-2. **Netleştirici Sorular Sorun:** Kullanım amacını, kısıtlamaları ve başarı kriterlerini anlamak için sırayla sorular yöneltin.
-3. **2-3 Yaklaşım Önerin:** Kendi önerinizi ve gerekçenizi öne çıkararak alternatif mimariler sunun.
-4. **Tasarımı Bölüm Bölüm Sunun:** Mimari, bileşenler, veri akışı ve hata yönetimini küçük parçalar halinde sunup her adımda onay alın.
-5. **Tasarım Dökümanını Yazın:** Onaylanan tasarımı `docs/superpowers/specs/YYYY-MM-DD-<konu>-design.md` konumuna kaydedin.
+2. **Yaklaşımı Belirleyin:** Soru sormadan, kendi kararınla en uygun yaklaşımı seçin.
+3. **2-3 Yaklaşım Özetleyin:** Kendi önerinizi ve gerekçenizi öne çıkararak alternatif mimarileri bilgilendirme olarak sunun (soru değil).
+4. **Tasarımı Uygulayın:** Mimari, bileşenler, veri akışı ve hata yönetimini kendi kararınızla belirleyip doğrudan uygulayın.
+5. **Tasarım Dökümanını Yazın:** Tasarımı `docs/superpowers/specs/YYYY-MM-DD-<konu>-design.md` konumuna kaydedin.
 6. **Öz-İnceleme (Self-Review):** Dökümanda eksik kalmış "TODO", çelişki veya belirsizlik varsa düzeltin.
-7. **Kullanıcı Onayı:** Dökümanı kullanıcıya inceletin.
-8. **Planlamaya Geçiş:** İnceleme tamamlandığında doğrudan planlama aşamasına (`writing-plans` yeteneğine) geçin.
+7. **Planlamaya Geçiş:** Doğrudan planlama aşamasına (`writing-plans` yeteneğine) geçin, sonunda tek seferde rapor verin.
 
 ---
 
 ## İş Akış Diyagramı
 
-`Proje Bağlamı` -> `Açıklayıcı Sorular` -> `2-3 Yaklaşım Önerisi` -> `Tasarım Sunumu` -> `Kullanıcı Onayı` -> `Spec Dökümanı Yazımı` -> `Planlama Yeteneği (writing-plans)`
+`Proje Bağlamı` -> `Yaklaşım Belirleme` -> `2-3 Yaklaşım Özeti` -> `Tasarımı Uygulama` -> `Spec Dökümanı Yazımı` -> `Planlama Yeteneği (writing-plans)` -> `Rapor`
