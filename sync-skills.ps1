@@ -1,52 +1,136 @@
-# sync-skills.ps1 — .opencode/skill/*.md kaynaklarini .claude/skills/<isim>/SKILL.md kopyalarina senkronlar
-# Neden: Claude Code'un Skill araci sadece .claude/skills/<isim>/SKILL.md yapisini gorur,
-# .opencode/skill/*.md klasorunu hic indekslemez. Tek kaynak .opencode/skill/*.md'dir;
-# bu script gövdeyi oraya kopyalar, .claude/skills tarafinin kendi frontmatter'ini korur.
-# Not: UTF8 BOM'suz okuma/yazma kullanilir (Get-Content -Raw ile Turkce karakterler bozuluyordu).
+#!/usr/bin/env pwsh
+<#
+.SYNOPSIS
+    Proje-özel skill dosyalarını .opencode/skill/ → .claude/skills/ senkron et
+    Frontmatter ve "Kaynak:" notunu koruyarak güncelle.
+
+.DESCRIPTION
+    .opencode/skill/*.md dosyalarını .claude/skills/<isim>/SKILL.md'ye kopyalar.
+    - Frontmatter (---.../---) mevcutsa korur; yoksa oluşturur
+    - "Kaynak:" satırını gövdeye ekler (yedek güvenliği)
+    - Hiç dosya yok → hata; hiç değişiklik → çıkış
+
+.PARAMETER SourceDir
+    Kaynak klasör (default: .opencode/skill)
+
+.PARAMETER TargetDir
+    Hedef klasör (default: .claude/skills)
+
+.EXAMPLE
+    .\sync-skills.ps1
+    .\sync-skills.ps1 -SourceDir C:\repo\.opencode\skill -TargetDir C:\repo\.claude\skills
+#>
+
+param(
+    [string]$SourceDir = ".\.opencode\skill",
+    [string]$TargetDir = ".\.claude\skills"
+)
 
 $ErrorActionPreference = "Stop"
-$repoRoot = $PSScriptRoot
 
-$map = @{
-    "tasarim-rehberi.md"           = "tasarim-rehberi"
-    "website-talimatlari.md"       = "website-talimatlari"
-    "site-otomasyon-kurallari.md"  = "site-otomasyon"
-    "gecmis-hatalar.md"            = "gecmis-hatalar"
+# Kontrol: kaynak klasör var mı?
+if (-not (Test-Path $SourceDir)) {
+    Write-Error "Kaynak klasör bulunamadı: $SourceDir"
 }
 
-$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+if (-not (Test-Path $TargetDir)) {
+    Write-Error "Hedef klasör bulunamadı: $TargetDir"
+}
 
-foreach ($sourceFile in $map.Keys) {
-    $skillName = $map[$sourceFile]
-    $sourcePath = Join-Path $repoRoot ".opencode\skill\$sourceFile"
-    $destDir = Join-Path $repoRoot ".claude\skills\$skillName"
-    $destPath = Join-Path $destDir "SKILL.md"
+$sourceFiles = @{
+    "brainstorming" = "brainstorming.md"
+    "design-system" = "design-system.md"
+    "web-design-master" = "web-design-master.md"
+    "animation-master" = "animation-master.md"
+    "tasarim-rehberi" = "tasarim-rehberi.md"
+    "website-talimatlari" = "website-talimatlari.md"
+    "site-otomasyon" = "site-otomasyon-kurallari.md"
+    "gecmis-hatalar" = "gecmis-hatalar.md"
+}
+
+$syncedCount = 0
+
+foreach ($skillName in $sourceFiles.Keys) {
+    $fileName = $sourceFiles[$skillName]
+    $sourcePath = Join-Path $SourceDir $fileName
 
     if (-not (Test-Path $sourcePath)) {
-        Write-Warning "Kaynak yok, atlaniyor: $sourcePath"
+        Write-Warning "Atlanıyor: $skillName"
         continue
     }
 
-    $body = [System.IO.File]::ReadAllText($sourcePath, [System.Text.Encoding]::UTF8)
+    $targetSkillDir = Join-Path $TargetDir $skillName
+    $targetPath = Join-Path $targetSkillDir "SKILL.md"
 
-    # Var olan hedefte frontmatter varsa koru, yoksa minimal frontmatter uret
-    $frontmatter = $null
-    if (Test-Path $destPath) {
-        $existing = [System.IO.File]::ReadAllText($destPath, [System.Text.Encoding]::UTF8)
-        if ($existing -match "(?s)^(---.*?---)\r?\n") {
-            $frontmatter = $matches[1]
+    # Hedef dizin oluştur
+    if (-not (Test-Path $targetSkillDir)) {
+        New-Item -ItemType Directory -Path $targetSkillDir -Force | Out-Null
+    }
+
+    # Kaynak dosyasını oku
+    $sourceContent = Get-Content -Path $sourcePath -Raw
+
+    # Frontmatter çıkart
+    $lines = $sourceContent -split "`n"
+    $frontmatterLines = @()
+    $bodyLines = @()
+    $inFrontmatter = $false
+    $frontmatterCount = 0
+
+    foreach ($line in $lines) {
+        if ($line -match "^---\s*$") {
+            if ($inFrontmatter) {
+                $inFrontmatter = $false
+                $frontmatterCount++
+                continue
+            } else {
+                $inFrontmatter = $true
+                continue
+            }
+        }
+
+        if ($inFrontmatter) {
+            $frontmatterLines += $line
+        } elseif ($frontmatterCount -gt 0 -or -not $inFrontmatter) {
+            $bodyLines += $line
         }
     }
-    if (-not $frontmatter) {
-        $frontmatter = "---`nname: $skillName`ndescription: LUMI AI Media proje-ozel talimat (kaynak: .opencode/skill/$sourceFile)`n---"
+
+    # Frontmatter yoksa oluştur
+    if ($frontmatterLines.Count -eq 0) {
+        $frontmatterLines = @(
+            "name: $skillName",
+            "description: $skillName skill",
+            "metadata:",
+            "  type: skill"
+        )
     }
 
-    $note = "`n> Kaynak: .opencode/skill/$sourceFile -- opencode ile senkron tutulur, biri guncellenince digeri de guncellenmeli.`n"
-    $final = "$frontmatter`n$note`n$body"
+    # Kaynak notu kontrol et, yoksa ekle
+    $bodyContent = ($bodyLines -join "`n").Trim()
+    if ($bodyContent -notmatch "Kaynak:") {
+        $bodyContent = "> **Kaynak:** ``.opencode/skill/$fileName``$([Environment]::NewLine)$([Environment]::NewLine)" + $bodyContent
+    }
 
-    New-Item -ItemType Directory -Force -Path $destDir | Out-Null
-    [System.IO.File]::WriteAllText($destPath, $final, $utf8NoBom)
-    Write-Host "Senkron: .opencode/skill/$sourceFile -> .claude/skills/$skillName/SKILL.md"
+    # Yeni dosya oluştur
+    $targetContent = "---$([Environment]::NewLine)" + ($frontmatterLines -join "`n") + "$([Environment]::NewLine)---$([Environment]::NewLine)$([Environment]::NewLine)" + $bodyContent
+
+    # Dosya yazıp değişikliği kontrol et
+    if (Test-Path $targetPath) {
+        $existingContent = Get-Content -Path $targetPath -Raw
+        if ($existingContent -ne $targetContent) {
+            Set-Content -Path $targetPath -Value $targetContent -Force
+            Write-Host "✓ Güncellendi: $skillName"
+            $syncedCount++
+        }
+    } else {
+        Set-Content -Path $targetPath -Value $targetContent
+        Write-Host "✓ Oluşturuldu: $skillName"
+        $syncedCount++
+    }
 }
 
-Write-Host "`nTamamlandi. site-otomasyon-kurallari.md opencode.json 'instructions' bagimliligi nedeniyle .opencode/skill/ icinde kaliyor (silinmedi)."
+Write-Host ""
+Write-Host "Sonuç: $syncedCount dosya senkron edildi"
+
+exit 0
