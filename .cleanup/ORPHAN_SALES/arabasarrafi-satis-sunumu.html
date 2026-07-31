@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabasarrafı — Dijital Dönüşüm Sunumu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1A1A1A;
+            color: #F5F5F0;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        body::after {
+            content: ""; position: fixed; inset: 0; z-index: 9998;
+            pointer-events: none; opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            mix-blend-mode: overlay;
+        }
+        @media print { .slide { position: relative !important; opacity: 1 !important; visibility: visible !important; height: 100vh !important; page-break-after: always; padding: 48px 56px; } .nav, .bar { display: none !important; } body::after { display: none !important; } .deck { max-width: none !important; max-height: none !important; position: relative !important; } }
+        .deck {
+            position: relative; width: 100vw; height: 100vh; overflow: hidden;
+        }
+        @media (min-width: 769px) {
+            .deck { max-width: calc(100vh * 16 / 9); max-height: calc(100vw * 9 / 16); margin: auto; position: absolute; inset: 0; }
+        }
+        .slide {
+            position: absolute; width: 100%; height: 100%;
+            display: flex; flex-direction: column; justify-content: center;
+            padding: 56px 72px;
+            opacity: 0; visibility: hidden;
+            transition: opacity 0.5s ease;
+            background: #1A1A1A;
+        }
+        .slide.active { opacity: 1; visibility: visible; }
+        .content { width: 100%; max-width: 880px; margin: 0 auto; }
+        .c { align-items: center; text-align: center; }
+        .c .content { display: flex; flex-direction: column; align-items: center; }
+
+        h1, h2 { font-family: 'Space Grotesk', sans-serif; line-height: 1.1; }
+        .huge { font-size: clamp(48px, 6vw, 88px); font-weight: 700; letter-spacing: -0.03em; }
+        .huge span { color: #C9A96E; }
+        .big { font-size: clamp(32px, 4vw, 56px); font-weight: 600; letter-spacing: -0.02em; }
+        .big span { color: #C9A96E; }
+        .mid { font-size: clamp(20px, 2vw, 28px); font-weight: 500; }
+        .sm { font-size: clamp(14px, 1.1vw, 17px); color: #8A8F98; line-height: 1.6; }
+        .xs { font-size: 12px; color: #8A8F98; letter-spacing: 0.08em; text-transform: uppercase; }
+        .gold { color: #C9A96E; }
+        .badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 6px 16px; border-radius: 100px;
+            border: 1px solid rgba(201,169,110,0.3);
+            background: rgba(201,169,110,0.08);
+            font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+            text-transform: uppercase; color: #C9A96E;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 36px; border-radius: 100px;
+            background: #C9A96E; color: #1A1A1A;
+            font-size: 15px; font-weight: 600; text-decoration: none;
+            margin-top: 24px; transition: all 0.3s;
+        }
+        .btn:hover { background: #B8944F; transform: translateY(-2px); }
+        .btn-o {
+            background: transparent; color: #F5F5F0;
+            border: 1px solid rgba(245,245,240,0.15);
+        }
+        .btn-o:hover { border-color: #C9A96E; background: rgba(201,169,110,0.05); }
+
+        .stat-row { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 24px; }
+        .stat-item { text-align: center; }
+        .stat-item .num { font-size: 48px; font-weight: 700; color: #C9A96E; line-height: 1; }
+        .stat-item .lbl { font-size: 13px; color: #8A8F98; margin-top: 6px; }
+
+        .box {
+            background: linear-gradient(135deg, rgba(201,169,110,0.06), transparent);
+            border: 1px solid rgba(201,169,110,0.2);
+            border-radius: 16px; padding: 28px 32px; margin-top: 20px;
+        }
+        .box p { font-size: 15px; line-height: 1.6; }
+
+        .quote {
+            border-left: 3px solid #C9A96E;
+            padding: 16px 24px;
+            background: rgba(201,169,110,0.04);
+            border-radius: 0 12px 12px 0;
+            margin-top: 16px;
+        }
+        .quote p { font-style: italic; font-size: 14px; line-height: 1.5; color: #B0B0B0; }
+        .quote .author { font-size: 12px; color: #C9A96E; margin-top: 6px; font-style: normal; }
+
+        .p-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 20px; }
+        .p-card {
+            background: #242424; border: 1px solid rgba(245,245,240,0.08);
+            border-radius: 16px; padding: 24px; text-align: center;
+        }
+        .p-card .name { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+        .p-card .price { font-size: 28px; font-weight: 700; color: #C9A96E; margin: 8px 0; }
+        .p-card .items { font-size: 12px; color: #8A8F98; line-height: 1.8; }
+        .p-card.featured { border-color: #C9A96E; background: rgba(201,169,110,0.06); }
+
+        .fly { opacity: 0; transform: translateY(24px); transition: all 0.6s ease-out; }
+        .slide.active .fly { opacity: 1; transform: translateY(0); }
+
+        .bar {
+            position: fixed; top: 0; left: 0; height: 3px;
+            background: #C9A96E; transition: width 0.3s; z-index: 1000;
+        }
+        .nav {
+            position: fixed; bottom: 24px; left: 50%;
+            transform: translateX(-50%);
+            display: flex; align-items: center; gap: 16px; z-index: 1000;
+        }
+        .nav button {
+            background: rgba(255,255,255,0.08); border: none;
+            color: #F5F5F0; width: 36px; height: 36px;
+            border-radius: 50%; cursor: pointer; font-size: 16px;
+        }
+        .nav button:hover { background: rgba(255,255,255,0.15); }
+        .nav span { color: #8A8F98; font-size: 13px; }
+
+        @media (max-width: 768px) {
+            .slide { padding: 28px 20px; }
+            .p-grid { grid-template-columns: 1fr; }
+            .stat-row { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bar" id="bar"></div>
+    <div class="deck">
+
+    <!-- 1: Hook -->
+    <div class="slide c active">
+        <div class="content">
+            <div class="badge fly">Dijital Dönüşüm</div>
+            <h1 class="huge fly" style="transition-delay:0.1s;">198.000 kişi sizi<br><span>Instagram'da</span> takip ediyor</h1>
+            <p class="mid fly" style="transition-delay:0.2s; color:#8A8F98; margin-top:16px;">Peki web siteniz nerede?</p>
+            <p class="sm fly" style="transition-delay:0.25s; margin-top:24px;">Arabasarrafı — İbrahim Sarı</p>
+        </div>
+    </div>
+
+    <!-- 2: Problem -->
+    <div class="slide">
+        <div class="content">
+            <div class="badge fly">Durum Analizi</div>
+            <h2 class="big fly" style="transition-delay:0.1s;">Müthiş bir markanız var<br>ama <span>dijital ayak iziniz yok</span></h2>
+            <ul style="margin-top:24px; list-style:none; display:flex; flex-direction:column; gap:12px;">
+                <li class="fly" style="transition-delay:0.15s; font-size:16px;">❌ <strong>198K Instagram</strong> — ama takipçiler siteye yönlenemiyor</li>
+                <li class="fly" style="transition-delay:0.2s; font-size:16px;">❌ <strong>68.2K YouTube</strong> — ama videolardan doğrudan iletişim yok</li>
+                <li class="fly" style="transition-delay:0.25s; font-size:16px;">❌ <strong>Google'da "Konya araç alım satım"</strong> aranınca siz çıkmıyorsunuz</li>
+                <li class="fly" style="transition-delay:0.3s; font-size:16px;">❌ <strong>Rakipleriniz</strong> — Otokoç, Emin, Has Otomotiv — hepsi Google Maps'te kayıtlı</li>
+            </ul>
+            <div class="box fly" style="transition-delay:0.35s;">
+                <p><strong>Gerçek:</strong> Türkiye'de araba alacakların %87'si önce Google'da aratıyor. Siz orada yoksanız, 198K takipçiniz değil, rakipler kazanıyor.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3: Sosyal Kanıt -->
+    <div class="slide">
+        <div class="content">
+            <div class="badge fly">Sosyal Kanıt</div>
+            <h2 class="big fly" style="transition-delay:0.1s;">Sizi rakiplerinizden ayıran<br><span>tek şey güven</span></h2>
+            <p class="sm fly" style="transition-delay:0.15s;">Müşterilerinizin sizin hakkınızdaki gerçek sözleri:</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;">
+                <div class="quote fly" style="transition-delay:0.2s;">
+                    <p>"Bu piyasada görebileceğiniz en dürüst, en efendi esnaftır. Gözünüz kapalı alışveriş yapabilirsiniz."</p>
+                    <div class="author">— Instagram kullanıcısı</div>
+                </div>
+                <div class="quote fly" style="transition-delay:0.25s;">
+                    <p>"Galericilerin bile hayran olduğu adam. Rakipleri düşmanları bile ona hayrandı."</p>
+                    <div class="author">— YouTube Shorts, 18 beğeni</div>
+                </div>
+                <div class="quote fly" style="transition-delay:0.3s;">
+                    <p>"İşini hakkıyla yapan bu güzel insanın kazancı bereketli olsun. Bir gün senden araba alacağım."</p>
+                    <div class="author">— YouTube yorumu</div>
+                </div>
+                <div class="quote fly" style="transition-delay:0.35s;">
+                    <p>"Sizin gibi değerlerimize sahip çıkan insanlar olduğu sürece sırtımız yere gelmez. İyiki varsınız."</p>
+                    <div class="author">— Instagram Reels</div>
+                </div>
+            </div>
+            <div class="stat-row fly" style="transition-delay:0.4s; justify-content:center;">
+                <div class="stat-item"><div class="num">198K</div><div class="lbl">Instagram</div></div>
+                <div class="stat-item"><div class="num">68.2K</div><div class="lbl">YouTube</div></div>
+                <div class="stat-item"><div class="num">181K</div><div class="lbl">TikTok</div></div>
+                <div class="stat-item"><div class="num">15+</div><div class="lbl">Yıl Deneyim</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4: Vision - What's possible -->
+    <div class="slide">
+        <div class="content">
+            <div class="badge fly">Çözüm</div>
+            <h2 class="big fly" style="transition-delay:0.1s;">Tek bir adreste<br><span>birleşelim</span></h2>
+            <p class="sm fly" style="transition-delay:0.15s;">İşte şu an canlı olan web siteniz — arabasarrafi.vercel.app</p>
+            <div class="stat-row fly" style="transition-delay:0.2s; justify-content:center;">
+                <div class="stat-item"><div class="num">✓</div><div class="lbl">Premium Tasarım</div></div>
+                <div class="stat-item"><div class="num">✓</div><div class="lbl">Mobil Uyumlu</div></div>
+                <div class="stat-item"><div class="num">✓</div><div class="lbl">Sosyal Bağlantılar</div></div>
+                <div class="stat-item"><div class="num">✓</div><div class="lbl">Google Hazır</div></div>
+            </div>
+            <div class="box fly" style="transition-delay:0.3s;">
+                <p><strong>Hayal edin:</strong> Bir müşteri "Konya araç alım satım" diye Google'da aratıyor. İlk sırada çıkıyorsunuz. Sitenize giriyor. Instagram'ınızı görüyor, YouTube videolarınızı izliyor — hepsi aynı yerde. Size güveniyor ve arıyor. <strong>Bu artık hayal değil, yapıldı.</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5: Paketler -->
+    <div class="slide">
+        <div class="content">
+            <div class="badge fly">Teklif</div>
+            <h2 class="big fly" style="transition-delay:0.1s;">Sana özel <span>3 seçenek</span></h2>
+            <p class="sm fly" style="transition-delay:0.15s;">Hepsi senin seviyene uygun. Hangisi sana uyarsa.</p>
+            <div class="p-grid fly" style="transition-delay:0.2s;">
+                <div class="p-card">
+                    <div class="xs">Bronz</div>
+                    <div class="name">Web Sitesi</div>
+                    <div class="price">₺15K</div>
+                    <div class="items">✓ Premium site (hazır)<br>✓ Vercel hosting<br>✓ Sosyal bağlantılar<br>—<br>Tek seferlik</div>
+                </div>
+                <div class="p-card featured">
+                    <div class="xs" style="color:#C9A96E;">⭐ Önerilen</div>
+                    <div class="name">Gümüş</div>
+                    <div class="price">₺25K</div>
+                    <div class="items">✓ Her şey dahil<br>✓ SEO (Google'da üst sıra)<br>✓ Google Maps optimizasyonu<br>✓ 1 ay takip</div>
+                </div>
+                <div class="p-card">
+                    <div class="xs">Altın</div>
+                    <div class="name">Tam Dijital</div>
+                    <div class="price">₺40K</div>
+                    <div class="items">✓ Her şey dahil<br>✓ Aylık içerik + blog<br>✓ 3 ay bakım<br>✓ Detaylı ziyaretçi raporu</div>
+                </div>
+            </div>
+            <p class="sm fly" style="transition-delay:0.3s; margin-top:12px; text-align:center;">Peşin ödemede %10 indirim. Takas da kabul edilir.</p>
+        </div>
+    </div>
+
+    <!-- 6: CTA -->
+    <div class="slide c">
+        <div class="content">
+            <div class="badge fly">Şimdi</div>
+            <h2 class="huge fly" style="transition-delay:0.1s;">Hazır mısın?<br><span>Başlayalım</span></h2>
+            <p class="mid fly" style="transition-delay:0.15s; color:#8A8F98; margin-top:12px;">198K kişi seni bekliyor. Gerisi senin elinde.</p>
+            <p class="sm fly" style="transition-delay:0.2s; margin-top:24px;">Powered By LUMI AI Media</p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="nav">
+        <button onclick="p(-1)">←</button>
+        <span><span id="c">1</span>/<span id="t">6</span></span>
+        <button onclick="p(1)">→</button>
+    </div>
+
+    <script>
+        let cur = 1, tot = 6;
+        document.getElementById('t').textContent = tot;
+        function p(d) {
+            cur = Math.max(1, Math.min(tot, cur + d));
+            document.querySelectorAll('.slide').forEach((s, i) => s.classList.toggle('active', i === cur - 1));
+            document.getElementById('c').textContent = cur;
+            document.getElementById('bar').style.width = (cur / tot * 100) + '%';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); p(1); } if (e.key === 'ArrowLeft') { e.preventDefault(); p(-1); } });
+        document.addEventListener('click', e => { if (!e.target.closest('.nav')) p(1); });
+    </script>
+</body>
+</html>

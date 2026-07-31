@@ -1,8 +1,9 @@
 claude_desktop_config.json
-opencode-deepsek/
 .env*
-!.env.secrets
+!.env.example
 .agt/
 .opencode/plugins/
 packages/
 RAPOR-*.md
+.cleanup/DEAD_CODE/*/node_modules
+.cleanup/UNUSED_PROJECTS/*/node_modules

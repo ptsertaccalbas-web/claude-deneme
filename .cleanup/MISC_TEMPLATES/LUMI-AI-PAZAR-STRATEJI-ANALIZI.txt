@@ -1,0 +1,395 @@
+# LUMI AI MEDIA — PAZAR ARAŞTIRMASI VE STRATEJİ RAPORU
+
+> Oluşturulma: 29 Temmuz 2026
+> Kaynak: TURKIYE-AI-MEDYA-AGENTLIK-RAPORU.md + AI-MEDIA-ECOSYSTEM-RESEARCH.md
+> Amaç: Bu dosyayı Claude'a ver, analiz etsin, marka kimliği + vizyon + misyon oluştursun.
+
+======================================================================================
+BÖLÜM 1: LUMI AI MEDIA ŞU AN NE YAPIYOR?
+======================================================================================
+
+Şirket profili:
+- Web sitesi tasarımı (Next.js 16, Tailwind CSS v4, GSAP, Three.js, Lenis)
+- AI video prodüksiyon (Hailuo API entegrasyonu, pipeline hazır)
+- Brand identity ve kurumsal kimlik
+- Satış stratejisi ve dijital pazarlama danışmanlığı
+
+Bugüne kadar yapılan işler:
+- N-PAK Ambalaj (endüstriyel B2B sitesi, canlı: n-pak-ambalaj.vercel.app)
+- Arabasarrafı (premium araç showroom, canlı: arabasarrafi.vercel.app)
+- Çorlu İlgi Diş (diş kliniği, beklemede)
+- LUMI AI Media ana sayfası (canlı: www.lumiaimedia.com)
+- AI video pipeline (Hailuo MCP, budget track, memory sistemi)
+
+Kullanılan teknoloji:
+- Next.js + TypeScript + Tailwind CSS v4
+- GSAP + Lenis (smooth scroll animasyon)
+- Lucide React (ikonlar)
+- Three.js / React Three Fiber (3D)
+- Hailuo AI video API
+- Vercel deploy
+
+Ekip: Tek kişi (kullanıcı tarafından yönlendirilen AI ajan)
+
+======================================================================================
+BÖLÜM 2: TÜRKİYE PAZAR ARAŞTIRMASI (12 AJANS)
+======================================================================================
+
+Not: Tüm ajansların web siteleri ziyaret edildi, veriler doğrulandı.
+
+----------------------------------------------------------------------
+2.1 Posthumane
+----------------------------------------------------------------------
+- URL: posthumane.com
+- Lokasyon: İstanbul
+- Ne iş yapar: AI video prodüksiyon (24h teslim) + vibe coding (web) + smart automation
+- Fiyat: AI video $3K, web $5K, automation $4K, design system $2K
+- Hedef kitle: Startuplar, global
+- Marka karakteri: Felsefi/tekno-avantgarde. Posthumanist teori. "Traditional production is dead"
+- Tasarım: Light tema, yeşil/krem/doğa görselleri
+- Site kalitesi: 7/10
+- Güçlü: Benzersiz felsefe, hızlı teslimat, sınırsız revizyon, şeffaf fiyat
+- Zayıf: Web portföyü derin değil, büyük marka referansı yok, 2 kişilik ekip
+- Sektör odağı: Genel (spesifik bir sektör yok)
+
+----------------------------------------------------------------------
+2.2 PAM AI Studio
+----------------------------------------------------------------------
+- URL: pamaistudio.com
+- Lokasyon: İstanbul
+- Ne iş yapar: AI görsel/video prodüksiyon. Gerçek + hibrit + AI. 600+ prodüksiyon
+- Fiyat: Teklif bazlı (şeffaf değil)
+- Hedef kitle: Enterprise (Mercedes-Benz, IVECO, Karaca, Ülker)
+- Marka karakteri: Premium, profesyonel, endüstriyel
+- Tasarım: Dark tema, Matrix neon yeşil, terminal estetiği
+- Site kalitesi: 8/10
+- Güçlü: 600+ gerçek prodüksiyon, büyük markalar, hibrit model, custom LoRA
+- Zayıf: Web tasarım hizmeti yok, brand identity yok, AI Studio ayrı kimlik taşımıyor
+- Sektör odağı: Otomotiv, FMCG, moda
+
+----------------------------------------------------------------------
+2.3 YW (YouthWorks)
+----------------------------------------------------------------------
+- URL: ywistanbul.com
+- Lokasyon: İstanbul + Londra + GCC
+- Ne iş yapar: 360° reklam ajansı. Brand design, iletişim stratejisi, kreatif kampanyalar, AI prodüksiyon (Studio Brave ile), dijital/sosyal medya, performans kreatifi
+- Fiyat: Çok yüksek (enterprise)
+- Hedef kitle: Enterprise global (P&G, Microsoft, Meta, Huawei, Maybelline)
+- Marka karakteri: Premium reklam devi, yenilikçi, 100+ ödül
+- Tasarım: Minimalist dark, siyah/beyaz/sarı vurgu
+- Site kalitesi: 9/10
+- Güçlü: 3 kıtada ofis, kendi AI teknolojisi Adin.AI, full-service, global müşteriler
+- Zayıf: KOBİ'lere kapalı, çok yüksek fiyat, web development odaklı değil
+- Sektör odağı: FMCG, finans, perakende
+
+----------------------------------------------------------------------
+2.4 Scope Digital
+----------------------------------------------------------------------
+- URL: scope.digital
+- Lokasyon: İstanbul, Sarıyer
+- Ne iş yapar: Dijital strateji, marka kimliği, web tasarım/geliştirme, mobil uygulama, içerik, sosyal medya, SEO, GEO, performans pazarlama
+- Fiyat: Yüksek
+- Hedef kitle: Enterprise, sağlık/ilaç sektörü
+- Marka karakteri: Kurumsal, premium, profesyonel
+- Tasarım: Light tema, beyaz/lacivert/turuncu
+- Site kalitesi: 8/10
+- Güçlü: 16 yıl, 86 marka, 150+ ödül, sağlık sektörü uzmanlığı, GEO öncülüğü
+- Zayıf: AI video prodüksiyon yok. Geleneksel dijital ajans yapısı (AI-native değil)
+- Sektör odağı: Sağlık/ilaç (Abdi İbrahim, Novartis, Pfizer, Roche)
+
+----------------------------------------------------------------------
+2.5 S-AI Media Works
+----------------------------------------------------------------------
+- URL: saimediaworks.com.tr
+- Lokasyon: İstanbul, Pendik
+- Ne iş yapar: Sadece AI video. 11+ alt hizmet (reklam, ürün, gayrimenkul, spor, sanayi, müzik klibi)
+- Fiyat: $490-$2.490
+- Hedef kitle: KOBİ, global
+- Marka karakteri: Profesyonel, sonuç odaklı, ticari
+- Tasarım: Dark tema, lacivert/siyah/altın
+- Site kalitesi: 7/10
+- Güçlü: Çok detaylı hizmet kataloğu, uygun fiyat, iyi SEO, çok dilli
+- Zayıf: Sadece video, web tasarım yok, görsel kimlik ortalama
+- Sektör odağı: E-ticaret, gayrimenkul, spor, sanayi
+
+----------------------------------------------------------------------
+2.6 Kertenkalem AI Studio
+----------------------------------------------------------------------
+- URL: kertenkalem.com
+- Lokasyon: Türkiye (remote)
+- Ne iş yapar: AI film/dizi/animasyon prodüksiyonu. İçerik üretici odaklı
+- Fiyat: Proje bazlı
+- Hedef kitle: Sanatsal/içerik üretici
+- Marka karakteri: Bağımsız, yaratıcı, deneysel
+- Tasarım: Dark tema, kırmızı/siyah
+- Site kalitesi: 7/10
+- Güçlü: Türkiye'nin ilk AI film stüdyosu, AI dizi/film projeleri, AI şarkıcı (Eyshan)
+- Zayıf: Tek kişi, kurumsal müşteri odaklı değil, web/pazarlama hizmeti yok
+- Sektör odağı: Film, dizi, müzik
+
+----------------------------------------------------------------------
+2.7 NexaMedia
+----------------------------------------------------------------------
+- URL: nexamediatr.com
+- Lokasyon: İzmir + Heilbronn/Almanya
+- Ne iş yapar: Sosyal medya, AI içerik üretimi, reklam stratejisi, AI otomasyon (7/24 asistan), web tasarım
+- Fiyat: ₺9.900/ay - ₺34.900/ay. Web paketi ₺19.900 tek seferlik
+- Hedef kitle: KOBİ, Avrupa pazarı
+- Marka karakteri: KOBİ odaklı, pratik, uygun fiyatlı
+- Tasarım: Light tema, lacivert/beyaz/turuncu
+- Site kalitesi: 6/10
+- Güçlü: AI otomasyon+web+sosyal medya full-service, İzmir+Almanya, şeffaf paket
+- Zayıf: Tasarım kalitesi ortalama, portföy sınırlı, AI video yok, marka kimliği zayıf
+- Sektör odağı: Genel KOBİ
+
+----------------------------------------------------------------------
+2.8 Ege Ad Works
+----------------------------------------------------------------------
+- URL: egeadworks.com
+- Lokasyon: İzmir, Balçova
+- Ne iş yapar: Web tasarım, Google Ads, Meta Ads, SEO, sosyal medya, UI/UX, yazılım, fotoğrafçılık
+- Fiyat: Orta
+- Hedef kitle: İzmir yerel işletmeler
+- Marka karakteri: Yerel, güvenilir, işbirlikçi
+- Tasarım: Light tema, turuncu/lacivert
+- Site kalitesi: 6/10
+- Güçlü: İzmir fiziksel ofis, 100+ müşteri, kapsamlı blog, uygun fiyat
+- Zayıf: AI-native değil, tasarım kalitesi düşük, yaratıcı prodüksiyon yok
+- Sektör odağı: İzmir yerel KOBİ
+
+----------------------------------------------------------------------
+2.9 Lein Digital
+----------------------------------------------------------------------
+- URL: leindigital.com
+- Lokasyon: İstanbul, Beşiktaş
+- Ne iş yapar: GEO (Generative Engine Optimization) - Türkiye'nin ilki, SEO, Google Ads, Meta Ads, sosyal medya, web tasarım, AI danışmanlığı
+- Fiyat: Orta
+- Hedef kitle: KOBİ/kurumsal
+- Marka karakteri: Uzman, GEO odaklı, eğitimci
+- Tasarım: Light tema, lacivert/beyaz
+- Site kalitesi: 6/10
+- Güçlü: GEO'da ilk olma avantajı, 10+ yıl, 100+ marka (Turkcell, Garanti BBVA, Kanal D)
+- Zayıf: AI video yok, yaratıcı prodüksiyon sınırlı, görsel tasarım zayıf
+- Sektör odağı: Sağlık turizmi, FMCG, finans, medya
+
+----------------------------------------------------------------------
+2.10 AI Studio İstanbul
+----------------------------------------------------------------------
+- URL: aistudioistanbul.com
+- Lokasyon: İstanbul
+- Ne iş yapar: AI post-prodüksiyon, VFX & compositing, AI video prodüksiyon, görsel geliştirme & style transformation
+- Fiyat: Proje bazlı (şeffaf değil)
+- Hedef kitle: Yaratıcı prodüksiyon, global
+- Marka karakteri: Teknik/post-prodüksiyon odaklı, sinematik derinlik vurgusu
+- Tasarım: Koyu tema, mavi-mor gradient
+- Site kalitesi: 5/10
+- Güçlü: VFX/post-prodüksiyon odağı (niş), sinematik kalite vurgusu
+- Zayıf: Web sitesi çok zayıf (güven sarsıcı), portföy yok, referans/müşteri listesi yok
+- Sektör odağı: Film, reklam, müzik videosu
+
+----------------------------------------------------------------------
+2.11 Magna Digital
+----------------------------------------------------------------------
+- URL: sortlist üzerinden tespit (doğrudan siteye erişilemedi)
+- Lokasyon: İstanbul
+- Ne iş yapar: AI-driven SEO & GEO, AI destekli içerik prodüksiyonu, dijital reklam yönetimi, web geliştirme
+- Fiyat: Bilinmiyor
+- Hedef kitle: Kurumsal
+- Marka karakteri: AI-first, data-driven
+- Güçlü: Gerçek AI-first yaklaşım, in-house ekip (15+ kişi), GEO+SEO+AI içerik üçgeni
+- Zayıf: AI video prodüksiyon yok, yaratıcı portföy sınırlı
+- Sektör odağı: Genel
+
+----------------------------------------------------------------------
+2.12 Karen Digital
+----------------------------------------------------------------------
+- URL: sortlist üzerinden tespit (doğrudan siteye erişilemedi)
+- Lokasyon: İstanbul
+- Ne iş yapar: Web tasarım & geliştirme, e-ticaret çözümleri, dijital reklam, özel yazılım, AI entegrasyonu, süreç otomasyonu
+- Fiyat: Bilinmiyor
+- Hedef kitle: KOBİ/kurumsal
+- Marka karakteri: Çözüm odaklı, mühendislik, esnek
+- Güçlü: Gerçek AI entegrasyon yetkinliği (RAG, LLM), full-stack web+yazılım+AI, iş problemine odaklı
+- Zayıf: AI video prodüksiyon yok, yaratıcı/yapım tarafı zayıf
+- Sektör odağı: Genel
+
+======================================================================================
+BÖLÜM 3: TÜRKİYE PAZAR STRATEJİK İÇGÖRÜLERİ
+======================================================================================
+
+Karşılaştırma Matrisi:
+| Ajans | Web | AI Video | Brand | AI Oto. | Dijital Paz. | Hedef | Fiyat | Sektör |
+|-------|:---:|:--------:|:-----:|:-------:|:------------:|-------|-------|--------|
+| LUMI AI | ★★★★★ | ★★★★★ | ★★★★★ | ★★★ | ★★★★ | Premium B2B | ₺15K-40K | Endüstriyel/Otomotiv |
+| Posthumane | ★★★ | ★★★★★ | ★★★ | ★★★★★ | ★ | Startup/Global | $2K-5K | Genel |
+| PAM AI | — | ★★★★★ | — | — | — | Enterprise | Teklif | Otomotiv/FMCG/Moda |
+| YW | ★★★ | ★★★★ | ★★★★★ | ★★★ | ★★★★★ | Enterprise | Çok yüksek | FMCG/Finans |
+| Scope | ★★★★★ | — | ★★★★ | — | ★★★★★ | Enterprise | Yüksek | Sağlık/İlaç |
+| S-AI Media | — | ★★★★ | — | — | — | KOBİ | $490-2,490 | E-ticaret/GM/Spor |
+| NexaMedia | ★★★ | — | ★★ | ★★★★ | ★★★★ | KOBİ | ₺9.9K-34.9K/ay | Genel |
+| Ege Ad | ★★★ | — | ★★ | — | ★★★★ | Yerel | Orta | Yerel |
+| Lein | ★★ | — | — | — | ★★★★ | KOBİ | Orta | Sağlık/FMCG |
+| AI Studio İst. | — | ★★★ | — | — | — | Yaratıcı Prod. | Proje bazlı | Film/Reklam |
+| Magna Digital | ★★ | — | ★★ | — | ★★★★ | Kurumsal | Bilinmiyor | Genel |
+| Karen Digital | ★★★★ | — | ★★ | ★★★★ | ★★★ | KOBİ/Kurumsal | Bilinmiyor | Genel |
+ 
+Çıkarımlar:
+1. Web + AI Video + Brand Identity üçgenini birleştiren hiçbir rakip yok. Karen Digital AI+web yapıyor ama AI video ve brand yok. AI Studio İstanbul sadece video post-prodüksiyon. Magna Digital AI-first ama yaratıcı prodüksiyon yok.
+2. İzmir'de premium AI ajansı boşluğu var (remote hizmetle değerlendirilebilir, İzmir ofisi gerekmez).
+3. Scope Digital dışında premium web tasarım yapan yok. Scope'un tarzı light/kurumsal. Karen Digital web+AI yapıyor ama tasarım kalitesi kanıtlanmamış.
+4. AI video yapanların (PAM, S-AI, Kertenkalem, AI Studio İst.) web tasarım hizmeti yok.
+5. Karanlık/premium tema kullanan sadece PAM AI Studio ve AI Studio İstanbul var (ikisi de sadece video).
+6. Posthumane düşük fiyatlı ($3K), YW çok yüksek. Arada $10-40K boşluk var.
+7. AI entegrasyonu yapan rakipler (Karen, Magna) web+yazılım odaklı, yaratıcı prodüksiyon yetenekleri yok. LUMI'nin kreatif+teknik birleşimi benzersiz.
+
+======================================================================================
+BÖLÜM 4: GLOBAL PAZAR ARAŞTIRMASI (38 ŞİRKET, 12 KATEGORİ)
+======================================================================================
+
+Kategori 1: AI-Native Creative Agencies
+- Empathy Lab (EPAM) — Global, enterprise, $100K+ projeler. Full-service AI-native
+- Boldare — Polonya, $25K+ projeler, product delivery. AI Scaffolding framework
+- Cieden — Ukrayna, mid-market. Agentic UX design (AI arayüz tasarımı)
+- The Gradient — Ukrayna, mid-market. AI product + brand
+
+Kategori 2: AI Video Production
+- Runway — $5.3B değerleme. AI video aracı (stüdyo değil)
+- Pika — ~$900M değerleme. AI video aracı
+- Synthesia — Enterprise avatar video. $89/mo başlangıç. Fortune 100
+- HeyGen — Avatar video. $24/mo başlangıç
+
+Kategori 3: AI Web Design
+- 10Web — AI web builder. $10-20/mo
+- Framer AI — AI site builder. $10-25/mo
+- BRIX Agency — ABD, custom premium web. $15K+
+
+Kategori 4: AI Brand Identity
+- Looka — 5M+ kullanıcı, AI logo. $65 tek seferlik
+- Brandmark — AI logo. $25-175
+
+Kategori 5: AI Marketing Agencies
+- NP Digital — Neil Patel'in ajansı. Enterprise SEO/AI marketing
+- Single Grain — ABD, AI-powered digital marketing
+- Search Atlas — AI SEO/GEO platformu
+
+Kategori 6: AI Copywriting
+- Jasper — $59/mo. Enterprise AI copy
+- Copy.ai — $49/mo. AI marketing copy
+- Writesonic — $19/mo. AI content
+
+Kategori 7: AI Music & Audio
+- Suno — $2.4B değerleme. AI music generation
+- ElevenLabs — AI ses + müzik. Merlin/Kobalt lisans anlaşmaları
+- Udio — AI music
+
+Kategori 8: AI Visual Art
+- Midjourney — AI görsel. $10-60/mo
+- Adobe Firefly — Enterprise AI görsel. Tazmin politikası var
+- Stability AI — Stable Diffusion. Açık kaynak
+
+Kategori 9: Big Tech AI Tools
+- Canva AI — 230M aylık aktif kullanıcı. $65-450/ay
+- Adobe Firefly — Creative Cloud entegre
+- Microsoft Designer — $0-10/ay
+
+Kategori 10: AI Advertising
+- StackAdapt — AI programmatic advertising
+- Smartly.io — AI ad creative optimization
+
+Kategori 11: AI Analytics
+- Semrush — AI SEO/analytics
+- Sight AI — AI görsel analiz
+
+Kategori 12: Full-Service AI
+- Accenture — Global, $100K+ projeler
+- Power Digital — ABD, full-service AI marketing
+
+Global Trendler:
+1. Pazar ikiye bölünmüş durumda: Volume players (Canva, Looka, Jasper - $0-200/mo) ve Premium/strategic players (Empathy Lab, Accenture - $50K+). Premium-accessible middle ($5-20K) neredeyse boş.
+2. Copyright temizliği yeni satış argümanı (ElevenLabs × Merlin, Adobe Firefly indemnification).
+3. GEO/AEO (Generative Engine Optimization) en hızlı büyüyen ajans servisi.
+4. Sora Nisan 2026'da kapatıldı ($15M/gün harcama, $2.1M ömür boyu gelir).
+5. Design token standardization (`@theme inline`) 2026 standardı haline geldi.
+6. Agentic UX yeni bir kreatif kategori (Cieden öncü).
+7. "AI film studio" kategorisi boş (araçlar var, stüdyo hizmeti yok).
+
+======================================================================================
+BÖLÜM 5: LUMI AI'NIN ARTILARI VE EKSİLERİ
+======================================================================================
+
+ARTILAR:
+1. Web + AI Video + Brand Identity üçgenini birleştiren tek oyuncu
+2. GSAP/Next.js/Three.js premium web yetkinliği (Scope Digital dışında yok)
+3. Karanlık/sinematik tasarım DNA'sı (pazar çoğunlukla light/corporate)
+4. AI video pipeline hazır (Hailuo entegrasyonu, budget track, memory)
+5. TR/EN çift dilli yetkinlik (global pazara açılmaya hazır)
+6. Task takip ve otomasyon disiplini (AGENTS.md, SESSION.md sistemi)
+7. Sektörel iş deneyimi (endüstriyel, otomotiv, sağlık)
+
+EKSİLER:
+1. Marka kimliği yok (karakter, hikaye, misyon tanımlı değil)
+2. Portföy sitesi yok (LUMI AI'nın kendi sitesi referans amaçlı yetersiz)
+3. Sürekli aynı font/renk/tarz (Oswald+Inter+altın sürekli tekrar ediyor)
+4. AI video kalitesi sinematik seviyede değil
+5. Tek kişilik ekip (ölçeklenme sınırlı)
+6. Pazarlama/outreach mekanizması yok
+7. Fiyatlandırma şeffaf değil (web'de yayında değil)
+8. SEO/GEO yetkinliği yok
+9. Tasarım çeşitliliği yok (sektöre göre palet değişmiyor)
+
+======================================================================================
+BÖLÜM 6: PAZARDAKİ BOŞLUKLAR VE FIRSATLAR
+======================================================================================
+
+YÜKSEK ÖNCELLKLİ FIRSATLAR:
+
+1. Karanlık/Sinematik AI Film Stüdyosu
+   - Runway/Pika araç, LUMI stüdyo olabilir
+   - "Dark, cinematic, premium" AI video prodüksiyonu yapan kimse yok
+   - Türkiye'de ve globalde bu pozisyon boş
+
+2. Premium AI Butik (Web+Video+Brand)
+   - Web + AI Video + Brand Identity üçgenini tek çatıda sunan yok
+   - Canva ($65) ile Accenture ($100K+) arasındaki $5-20K boşluk
+   - Müşteri profili: Canva'dan büyüyen ama Accenture'a hazır olmayan firmalar
+
+3. Kreatif GEO/AEO Danışmanlığı
+   - ChatGPT/Gemini/Perplexite'de markaları görünür kılma
+   - Mevcut GEO ajansları (Lein, Sight AI) teknik SEO yapıyor
+   - Kreatif/yaratıcı GEO yapan yok (marka hikayesini LLM'lere cazip kılma)
+
+4. AI Brand Sound (Ses Kimliği)
+   - ElevenLabs + Suno var ama ajans yok
+   - Markalara AI jingle, ses logosu, marka sesi
+
+5. Agentic UX + Kreatif
+   - Cieden agentic UX yapıyor ama kreatif boyutu zayıf
+   - AI arayüz tasarımı + marka hikayesi birleşimi
+
+ORTA ÖNCELLKLİ FIRSATLAR:
+6. AI Rebrand Servisi ($2-5K) — Looka $65 logo, Accenture $100K rebrand arası
+7. AI Commercial Production — TV/YouTube/OOH reklamları için hibrit model
+8. Design Token Migration — Eski sitelerin token bazlı sisteme geçişi
+
+======================================================================================
+BÖLÜM 7: LUMI AI'NIN ŞU ANKİ DURUMU VE KRİTİK UYARILAR
+======================================================================================
+
+Şu anda LUMI AI Media'nın en büyük sorunu:
+1. Bir marka kimliği yok — potansiyel müşteri "LUMI AI Media kim?" dediğinde cevap yok.
+2. Her site aynı görünüyor — Oswald+Inter+altın rengi sektör fark etmeksizin tekrar ediyor.
+3. Portföy gösterilemiyor — n-pak-ambalaj.vercel.app ve arabasarrafi.vercel.app canlı ama LUMI AI'nın kendi sitesi referans kalitesinde değil.
+4. AI video henüz satılabilir kalitede değil — $0.28'lik test yetersiz.
+5. Müşteri bulma mekanizması yok — sadece lead listesi ve manuel arama.
+6. Mevcut sitelerin performans metrikleri yok — kaç ziyaretçi, dönüşüm oranı, müşteri memnuniyeti bilinmiyor. Bu veriler portföy güvenilirliği için kritik.
+7. Copyright/telif politikası yok — Hailuo API çıktılarının ticari kullanım hakları, müşteriye devredilebilirliği, telif tazminatı konuları tanımlı değil. Adobe Firefly'ın indemnification politikası ve Synthesia'nın enterprise lisans anlaşmaları rekabette öne çıkarken LUMI bu konuda sessiz.
+8. Operasyonel gerçekçilik sorunu — 3 iş kolu (web + video + brand identity) tek kişi + AI ajan ile yürütülüyor. Bir müşteriye üç hizmet birden satılırsa teslimat süresi ve kalite riske girer. Önceliklendirme ve kapasite planlaması yapılmamış.
+9. "₺15K-40K" fiyat aralığı fiili değil, tahmini — hiçbir projede bu fiyattan satış yapılmadı. Gerçek fiyatlandırma henüz piyasada test edilmedi.
+10. "İzmir'de premium AI ajansı boşluğu" bir fırsat olarak not edilmiş ancak LUMI AI'nın İzmir'de ofisi yok. Remote hizmet verilebilir, bu belirtilmeli.
+
+======================================================================================
+
+======================================================================================
+
+
+

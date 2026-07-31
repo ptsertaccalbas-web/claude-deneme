@@ -5,7 +5,8 @@
       "Read(//c/Users/asus/.local/share/opencode/**)",
       "Read(//c/Users/asus/.config/opencode/**)",
       "Read(//c/Users/asus/AppData/Roaming/**)",
-      "Read(//c/Users/asus/AppData/Local/**)"
+      "Read(//c/Users/asus/AppData/Local/**)",
+      "Bash(npx vercel *)"
     ]
   }
 }
