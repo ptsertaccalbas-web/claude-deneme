@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     İş tipi seçin (Tip A/B/C/D/E/F/G), skill'leri otomatik yükle
@@ -104,7 +104,7 @@ $description = $jobConfig["description"]
 
 Write-Host ""
 Write-Host "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-Write-Host "Tip $JobType: $description" -ForegroundColor Green
+Write-Host "Tip ${JobType}: $description" -ForegroundColor Green
 Write-Host "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 Write-Host "Ponytail: $ponytail"
 Write-Host "Skill sayısı: $($skills.Count)"

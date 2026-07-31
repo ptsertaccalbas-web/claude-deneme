@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     İş bittiğinde build doğru mu, dosya sayısı doğru mu kontrol et.
